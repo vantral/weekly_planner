@@ -1,0 +1,123 @@
+body {
+    background-color: #eaeaea; /* Light gray background for the entire page */
+    font-family: Arial, sans-serif; /* Clean, modern font */
+    margin: 0; /* Remove default margin */
+}
+
+.weekly-planner {
+    background-color: #ffffff; /* White background for the planner */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px; /* Padding for spacing */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 90% !important; /* Maximum width for the planner */
+    margin: auto; /* Center the planner */
+}
+
+h2 {
+    color: #4a4a4a; /* Darker gray for the main title */
+}
+
+.navigation {
+    margin-bottom: 20px; /* Spacing below navigation buttons */
+}
+
+.btn {
+    background-color: #6c757d; /* Muted button color */
+    color: white; /* White text for buttons */
+}
+
+.btn:hover {
+    background-color: #5a6268; /* Darker shade on hover */
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center cards horizontally */
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #f1f1f1;
+    min-height: 300px; /* Optional: add height to give each day a consistent size */
+}
+
+/* Styling for task and meeting cards */
+.card {
+    width: 100%; /* Width adjustment to keep it centered within the day column */
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #e9ecef;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tasks {
+    width: 100%;
+}
+
+.day h3 {
+    text-align: center; /* Center the day title */
+    margin-bottom: 15px;
+}
+
+.week-view {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.card-title {
+    color: #4a4a4a; /* Dark gray for card titles */
+}
+
+.card-text {
+    color: #6c757d; /* Muted gray for card text */
+}
+
+.text-muted {
+    color: #adb5bd; /* Light muted text color */
+}
+
+.badge {
+    background-color: #e0e0e0; /* Light badge background */
+    color: #4a4a4a; /* Dark gray text for badge */
+}
+
+.general-section {
+    margin-top: 20px; /* Spacing above the general section */
+}
+
+textarea {
+    resize: none; /* Prevent resizing */
+    border: 1px solid #ced4da; /* Light border for textarea */
+    border-radius: 5px; /* Rounded corners for textarea */
+    padding: 10px; /* Inner padding */
+}
+
+textarea:focus {
+    border-color: #80bdff; /* Border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Focus shadow */
+}
+.add-task, .add-meeting {
+    margin: 5px; /* Spacing around buttons */
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.add-task:hover {
+    background-color: #28a745; /* Darker green on hover */
+}
+
+.add-meeting:hover {
+    background-color: #ffc107; /* Darker yellow on hover */
+}
+
+/* Modal styles */
+.modal-header {
+    background-color: #007BFF; /* Bootstrap primary color for modal header */
+    color: white; /* White text */
+}
+
+.modal-title {
+    font-size: 1.5rem; /* Larger title */
+}
